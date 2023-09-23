@@ -6,8 +6,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -22,20 +22,89 @@ body {
     display: grid;
     height: 100vh;
     gap: 10px;
-    background-color: #1ECBE1;
+    background-color: #3b82f6;
     color: #ffffff;
     grid-column: 1 / 2;
 }
 
-.header {
-    display: grid;
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+.search-right-side,
+.search-left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+input {
+    width: 40rem;
+    height: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgb(143, 142, 142);
+}
+
+#apple-small-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.lower-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem 2rem 1rem;
+}
+
+.lower-header .left-side {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.header-button {
+    width: 6rem;
+    height: 2rem; 
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #3b82f6;
+    border: none;
+}
+
+.header-button:hover {
+    color: #F3370C;
+}
+
+#big-apple-icon {
+    height: 3rem;
+    width: 3rem;
 }
 
 .main-content {
     display: grid;
 }
 
-.sidebar-icon {
+.icon {
     height: 1rem;
     width: 1rem;
 }
@@ -43,6 +112,12 @@ body {
 #dashboard {
     height: 2rem;
     width: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 ul li {
